@@ -50,7 +50,3 @@ buttons.forEach(button => {
 
 
 
-/*calculateRemainingBudget() {
-    const totalSpent = this.expenses.reduce((sum, item) => sum + item.amount, 0);
-    return this.initialAmount - totalSpent;
-}*/
