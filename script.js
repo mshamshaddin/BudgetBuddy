@@ -52,6 +52,8 @@ buttons.forEach(button => {
     button.addEventListener("click", function() {
         const categoryId = button.getAttribute("data-category");
         handleExpense(categoryId);
+       
+
     });
 });
 
