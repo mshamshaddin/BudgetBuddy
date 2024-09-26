@@ -48,8 +48,14 @@ header {
 
 input {
   width: 150px;
+  border-radius: 5px;
+  height: 15px;
 }
 
+h3, #remaining-funds {
+  visibility: collapse;
+
+}
 
 @media (max-width: 768px) {
   .col {
@@ -74,4 +80,11 @@ input {
   /* span {
    visibility: collapse;
   }*/
+  h3, #remaining-funds {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
 }
