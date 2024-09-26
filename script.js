@@ -1,6 +1,10 @@
 let totalBudget = 0;
 let remainingBudget = 0;
 
+
+
+
+
 // Event listener for submitting the total budget
 document.getElementById("budget-funds").addEventListener("submit", function(event) {
     event.preventDefault(); // dont do default behavior when page refreshes  // Prevent page reload on form submit
@@ -13,7 +17,11 @@ document.getElementById("budget-funds").addEventListener("submit", function(even
 
     remainingBudget = totalBudget;
     document.querySelector(".budget-total").textContent = `Remaining Budget: $${remainingBudget.toFixed(2)}`;
+
+
 });
+
+
 
 
 function handleExpense(categoryId) {
@@ -46,6 +54,7 @@ buttons.forEach(button => {
         handleExpense(categoryId);
     });
 });
+
 
 
 
