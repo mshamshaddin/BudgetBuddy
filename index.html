@@ -4,66 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Budget Buddy</title>
 </head>
-
 <body>
     <header>
-      <h1>Budget Buddy</h1>
-      <form id="budget-funds">
-        <label>Total</label>
-
-        <input placeholder="weekly buget" class="total" type="number" />
-        <button type="submit">Submit</button>
-      </form>
-      <div class="budget-total"></div>
+        <h1>Budget Buddy</h1>
+        <form id="budget-funds">
+            <label>Total</label>
+            <input placeholder="weekly budget" class="total" type="number" id="total-budget" />
+            <button type="submit">Submit</button>
+        </form>
+        <div class="budget-total">Remaining Budget: $0</div>
     </header>
 
     <main class="row">
-      <section class="card card1">
-        <h2>Entertainment</h2>
-        <form>
-          <span>
-            <input placeholder="enter spend amount" type="number" />
-            <button>submit</button>
-          </span>
+        <!-- Entertainment Section -->
+        <section class="card card1">
+            <h2>Entertainment</h2>
+            <form>
+                <span>
+                    <input id="entertainment" placeholder="Enter spend amount" type="number" />
+                    <button type="button" class="entry-btn" data-category="entertainment">Submit</button>
+                </span>
+
+            </form>
+            <div class="category-amount">
+           
+            </div>
+        </section>
+
+        <!-- Food Section -->
+        <section class="card card2">
+            <h2>Food</h2>
+            <form >
+            <span>
+                <input id="food" placeholder="Enter spend amount" type="number" />
+                <button type="button" class="entry-btn" data-category="food">Submit</button>
+            </span>
         </form>
-      </section>
+            <div class="category-amount">
 
-      <section class="card card2">
-        <h2>Food</h2>
-        <span>
-          <input placeholder="enter spend amount" />
-          <button>submit</button>
-        </span>
-      </section>
+            </div>
 
-      <section class="card card3">
-        <h2>Clothing</h2>
-        <span>
-          <input placeholder="enter spend amount" />
-          <button>submit</button>
-        </span>
-      </section>
+        </section>
 
-      <section class="card card4">
-        <h2>Bills</h2>
-        <span>
-          <input placeholder="enter spend amount" />
-          <button>submit</button>
-        </span>
-      </section>
+        <!-- Clothing Section -->
+        <section class="card card3">
+            <h2>Clothing</h2>
+            <form>
+            <span>
+                <input id="clothing" placeholder="Enter spend amount" type="number" />
+                <button type="button" class="entry-btn" data-category="clothing">Submit</button>
+                
+            </span>
+                </form>
+            <div class="category-amount">
+
+            </div>
+        </section>
+
+        <!-- Bills Section -->
+        <section class="card card4">
+            <h2>Bills</h2>
+            <form>
+            <span>
+                <input id="bills" placeholder="Enter spend amount" type="number" />
+                <button type="button" class="entry-btn" data-category="bills">Submit</button>
+            </span>
+          </form>
+                <div class="category-amount">
+
+                </div>
+           
+        </section>
     </main>
+ <!-- Remaining Funds Section -->
+ <div>
+    <h3>Remaining Funds</h3>
+    <div id="remaining-funds">$0</div>
+</div>
+ 
 
-    <div>
-      <h3>Remaining Funds</h3>
-    </div>
-
-    <table>
-      <tr>
-        <th></th>
-      </tr>
-    </table>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
